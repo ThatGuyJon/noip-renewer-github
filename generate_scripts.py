@@ -30,7 +30,7 @@ for chunk in range(1, num_scripts + 1):
         script_content += '    --env NO_IP_USERNAME="$username' + str(i) + '" \\\n'
         script_content += '    --env NO_IP_PASSWORD="$password' + str(i) + '" \\\n'
         script_content += '    --env NO_IP_TOTP_KEY="$totp_key' + str(i) + '" \\\n'
-        script_content += '    simaofsilva/noip-renewer:latest\n'
+        script_content += '    simaofsilva/noip-renewer:pr-583-alpine\n'
         script_content += 'fi\n\n'
     
     # Write the accumulated content to the script file
